@@ -4,11 +4,15 @@
 - [https://www.nederlands-voetbalmuseum.nl/archief/](https://www.nederlands-voetbalmuseum.nl/archief/)
 - [https://www.voetbalarchieven.nl/](https://www.voetbalarchieven.nl/)
 - [https://historiebetaaldvoetbal.nl/](https://historiebetaaldvoetbal.nl/)
+- [Fer van Dijk](https://fervandijk.nl)
 
 ## Beeldbank
 - https://archief.amsterdam/beeldbank/?mode=gallery&view=horizontal&q=s.l.t.o.&rows=1&page=1
 - [Zoekterm 'voetbal' in Beeldbank De Boer Haarlem](https://noord-hollandsarchief.nl/beelden/beeldbankdeboer/?mode=gallery&view=horizontal&q=voetbal&page=1&reverse=0)
 - [Zoekterm 'voetbal' in Beeldbank Nationaal Archief](https://www.nationaalarchief.nl/onderzoeken/zoeken?activeTab=photos&rm=gallery&searchTerm=voetbal) 
+
+## Periodieken
+- [Sportbonden clubs periodieken](https://resources.huygens.knaw.nl/sportbondenclubsperiodieken/gids/search)
 
 ## Archiefbeschrijvingen
 - [Archiefinventaris van HFC in Haarlem](https://hdl.handle.net/21.12102/08ED093D98B14E129C0C611F81B3C762)
