@@ -3,9 +3,16 @@
 	const center = ref()
 	const maps = ref()
 
+	const mapOptions: google.maps.MapOptions = {
+		zoom: 8,
+		center: {lat: 52.377956, lng: 4.897070},
+		mapId: 'a2179001959105',
+		disableDefaultUI: true
+	}
+
 	const query = ref({
-		lat: -37.7995487,
-		lng: 144.9867841,
+		lat: 52.377956,
+		lng: 4.897070
 	})
 
 	const markers = ref([])
@@ -20,12 +27,13 @@
 </script>
 
 <template>
-	<div class="not-prose h-1/3">
-		<div class="w-full h-1/3">
+	<div class="not-prose h-[660px] overflow-hidden">
+		<div class="w-full">
 			<ScriptGoogleMaps
 					ref="maps"
 					:center="query"
 					:markers="markers"
+					:map-options="mapOptions"
 					api-key="AIzaSyDSXSomToixQF1H2aYa0JE8Kg_8eKXd7y8"
 					class="group !w-full !h-1/3"
 					above-the-fold
