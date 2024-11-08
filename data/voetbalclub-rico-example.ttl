@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix sdo: <https://schema.org/> .
+
+_:1 a rico:CorporateBody, sdo:SportsOrganization ;
+    sdo:logo "https://www.voetbalarchieven.nl/wp-content/uploads/2014/01/afc.jpg"^^xsd:anyURI ; 
+    sdo:name "Ajax" ;
+    rico:hasOrHadAgentName [
+        a rico:AgentName ;
+        rico:hasOrHadType _:official_name ;
+        rico:textualValue "AFC Ajax" ;
+    ] ;
+    rico:wasMergedInto _:2 ;
+    rico:wasSplitInto _:3 ;
+    rico:agentHasOrHadLocation [
+        a rico:Place ;
+        rico:hasOrHadPlaceName "Amsterdam"
+    ] ;
+    rico:hasBeginningDate [
+        a rico:Date ;
+        rico:expressedDate "18 januari 1895" ;
+        rico:normalizedDateValue "1895-01-18"^^xsd:date 
+    ] ;
+    rico:hasEndDate [
+        a rico:Date ;
+        rico:expressedDate "18 januari 2025" ;
+        rico:normalizedDateValue "2025-01-18"^^xsd:date 
+    ] ;
+    rico:isOrWasDescribedBy "https://www.voetbalarchieven.nl/clubs/afc/"^^xsd:anyURI .
