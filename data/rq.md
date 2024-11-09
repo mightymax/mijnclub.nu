@@ -39,6 +39,8 @@ select * where {
 
 ## Foto's van H.F.C.
 
+
+
 ## Poging tot automatisch linken
 ```
 prefix sdo: <https://schema.org/>

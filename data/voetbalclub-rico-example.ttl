@@ -1,6 +1,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
 @prefix sdo: <https://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 _:1 a rico:CorporateBody, sdo:SportsOrganization ;
     sdo:logo "https://www.voetbalarchieven.nl/wp-content/uploads/2014/01/afc.jpg"^^xsd:anyURI ; 
