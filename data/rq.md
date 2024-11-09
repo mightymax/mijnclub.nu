@@ -17,6 +17,7 @@ where {
       WHERE {
       ?place gn:name ?placename ;
            gn:featureCode gn:P.PPL ;
+           gn:countryCode "NL" ;
            wgs84:latitude ?lat ;
            wgs84:longitude ?lon .    
             }   
@@ -37,4 +38,22 @@ select * where {
 ```
 
 ## Foto's van H.F.C.
+
+## Poging tot automatisch linken
+```
+prefix sdo: <https://schema.org/>
+
+construct
+  {
+    ?club sdo:subjectOf ?s .
+  }
+where {
+  ?club a sdo:SportsOrganization ;
+        sdo:name ?clubnaam .
+  ?s a sdo:CreativeWork ; 
+    sdo:name ?name .
+  FILTER(contains(?name, ?clubnaam))
+} LIMIT 100
+```
+
 

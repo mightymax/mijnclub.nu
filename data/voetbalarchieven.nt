@@ -1,0 +1,9 @@
+<https://www.mijnclub.nu/club/3736> <https://schema.org/url> "https://www.voetbalarchieven.nl/clubs/koninklijke-hfc/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://www.mijnclub.nu/club/3736> <https://schema.org/logo> "https://www.voetbalarchieven.nl/wp-content/uploads/2014/01/Koninklijke_HFC_logo.jpg"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://www.mijnclub.nu/club/3736> <https://schema.org/logo> "https://www.voetbalarchieven.nl/wp-content/uploads/2024/03/witblauw-blauwebies-tenue.jpg"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.mijnclub.nu/club/7300> <https://schema.org/url> "https://www.voetbalarchieven.nl/clubs/slto/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+
+<https://www.mijnclub.nu/club/151> <https://schema.org/logo> "https://www.voetbalarchieven.nl/wp-content/uploads/2014/01/ajax1.jpg"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://www.mijnclub.nu/club/151> <https://schema.org/logo> "https://www.voetbalarchieven.nl/wp-content/uploads/2024/03/witroodbalkwit.jpg"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://www.mijnclub.nu/club/151> <https://schema.org/url> "https://www.voetbalarchieven.nl/clubs/ajax-amsterdam/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
