@@ -40,13 +40,13 @@ app.post('/annotation', async (req, res) => {
   res.status(200).send(value);
 })
 
-app.get('/annotation/:club(\\d+)/:media(\\d+)?', async (req, res) => {
+app.get('/annotation/:club(\\d+)?/:media(\\d+)?', async (req, res) => {
   const club = req.params.club;
   const media = req.params.media;
   const client = await createClient({url: process.env.REDIS ?? 'redis://localhost:6379'})
     .on('error', err => console.log('Redis Client Error', err))
     .connect();
-  const MATCH =  `annotation:${club}:${media?`${media}:`:''}*`;
+  const MATCH =  `annotation:${club?`${club}:`:''}${media?`${media}:`:''}*`;
   const annotations = [];
   for await (const key of client.scanIterator({MATCH, COUNT: 1000})) {
     console.log(key)
