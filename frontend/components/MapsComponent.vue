@@ -78,7 +78,7 @@
 				<div class="bg-white rounded-xl max-w-80 shadow-xl">
 					<div class="py-4 px-6">
 						<h2 class="ibm-plex-sans-semibold text-xl mb-2">Het digitale hart van jouw voetbalvereniging</h2>
-						<p class="ibm-plex-sans-light text-base mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						<p class="ibm-plex-sans-light text-base mb-4">Hier vind je de geschiedenis van jouw cluppie. Mis je wat? Voeg het zelf toe!</p>
 
 						<BaseCallToAction />
 					</div>

@@ -45,7 +45,7 @@
 	const clubs = [
 		{
 			name: 'HFC Haarlem (Haarlemsche Football Club)',
-			id: 'hfc-haarlem'
+			id: '3736'
 		},
 		{
 			name: 'SLTO (Amsterdam)',
@@ -69,18 +69,21 @@
 		<template v-slot:highlights>
 			<HighlightItem
 					url="/club/3736"
+					image="/img/toevoeging/EigenMediaHFC3.png"
 					label="HFC Haarlem (Haarlemsche Football Club)"
 					title="De evolutie van het voetbaltenue: Van wollen truien naar high-tech shirts."
 					description="Ga mee op reis door de evolutie van het tenue" />
 
 			<HighlightItem
 					url="/club/slto-amsterdam"
+					image="/img/toevoeging/EigenMediaHFC4.png"
 					label="SLTO (Amsterdam)"
 					title="Voetbal zoals het vroeger was"
 					description="Die goede oude tijd" />
 
 			<HighlightItem
 					url="/club/flinta-football"
+					image="/img/toevoeging/EigenMediaHFC5.png"
 					label="Flinta Football"
 					title="Juichen om trotse koplopers AMVJ en Sporting Martinus"
 					description="Met een hoop blijdschap je team aanmoedigen" />
