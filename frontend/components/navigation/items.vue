@@ -17,7 +17,7 @@
 		   class="ibm-plex-sans-regular block mt-4 lg:inline-block lg:mt-0 hover:underline mr-8">
 			Competities
 		</a>
-		<a href="" :class="menuItemClass"
+		<a href="/club/directory" :class="menuItemClass"
 		   class="ibm-plex-sans-regular block mt-4 lg:inline-block lg:mt-0 hover:underline mr-8">
 			Clubs
 		</a>
