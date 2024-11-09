@@ -1,0 +1,11 @@
+<https://www.mijnclub.nu/club/20000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.ica.org/standards/RiC/ontology#CorporateBody> <https://www.mijnclub.nu/club> .
+<https://www.mijnclub.nu/club/20000> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://schema.org/SportsOrganization> <https://www.mijnclub.nu/club> .
+<https://www.mijnclub.nu/club/20000> <https://schema.org/name> "Flinta Football" <https://www.mijnclub.nu/club> .
+<https://www.mijnclub.nu/club/20000> <https://www.ica.org/standards/RiC/ontology#hasOrHadAgentName> _:genid1 <https://www.mijnclub.nu/club> .
+<https://www.mijnclub.nu/club/20000> <https://www.ica.org/standards/RiC/ontology#agentHasOrHadLocation> _:genid2 <https://www.mijnclub.nu/club> .
+<https://www.mijnclub.nu/club/20000> <https://www.ica.org/standards/RiC/ontology#isOrWasDescribedBy> "https://flintafootball.com/"^^<http://www.w3.org/2001/XMLSchema#anyURI> <https://www.mijnclub.nu/club> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.ica.org/standards/RiC/ontology#AgentName> <https://www.mijnclub.nu/club> .
+_:genid1 <https://www.ica.org/standards/RiC/ontology#hasOrHadCategory> <http://vocab.getty.edu/aat/300404670> <https://www.mijnclub.nu/club> .
+_:genid1 <https://www.ica.org/standards/RiC/ontology#textualValue> "Flinta Football" <https://www.mijnclub.nu/club> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://www.ica.org/standards/RiC/ontology#Place> <https://www.mijnclub.nu/club> .
+_:genid2 <https://www.ica.org/standards/RiC/ontology#hasOrHadPlaceName> "Amsterdam" <https://www.mijnclub.nu/club> .
