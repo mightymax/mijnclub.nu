@@ -4,7 +4,7 @@
 		buttonText?: string
 	}>(), {
 		buttonLink: '#',
-		buttonText: 'Button'
+		buttonText: 'Lees meer'
 	});
 </script>
 

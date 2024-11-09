@@ -9,10 +9,10 @@
 	let clubList: Ref<Club[] | null> = ref(null);
 
 	const query = `
-      prefix rico: <https://www.ica.org/standards/RiC/ontology#>
-	  prefix sdo: <https://schema.org/>
-      select * where {
-		  ?s a sdo:SportsOrganization ;
+        prefix rico: <https://www.ica.org/standards/RiC/ontology#>
+		prefix sdo: <https://schema.org/>
+		select * where {
+		  ?s a sdo:SportsOrganization, rico:CorporateBody ;
 		     sdo:name ?name .
 		} order by ?name
     `;

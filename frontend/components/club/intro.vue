@@ -1,24 +1,35 @@
 <script setup lang="ts">
-
+	defineProps<{
+		clubName: string,
+		clubDescription: string,
+		clubLogo?: string,
+		clubShirt?: string,
+		previousName?: string,
+		followingName?: string
+	}>()
 </script>
 
 <template>
 	<section class="max-w-5xl m-auto mt-16">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 			<div>
-				<h1 class="ibm-plex-sans-medium text-4xl">WV-HEDW (Wilhelmina Vooruit - Hortus Eendracht Doet Winnen)</h1>
+				<h1 class="ibm-plex-sans-medium text-4xl">{{ clubName }}</h1>
+				<div v-if="previousName" class="text-[#0033D9] underline">
+					<a :href="`/club/${previousName.toLowerCase()}`">{{ previousName }}</a>
+				</div>
+				<div v-if="followingName" class="text-[#0033D9] underline">
+					<a :href="`/club/${followingName.toLowerCase()}`">{{ followingName }}</a>
+				</div>
+
+				<div class="flex flex-row">
+					<ClubLogo :logo-image="clubLogo" />
+					<ClubShirt :shirt-image="clubShirt" />
+				</div>
 			</div>
 
 			<div>
 				<p class="ibm-plex-sans-light text-base">
-					In juni 1906 richtten Louis Aussen (14) en Martijn Sajet (13) samen met zes vriendjes van de HBS hun
-					eigen voetbalclub op onder de merkwaardige naam Uitspanning Door Inspanning (UNI). Sajet zei daar
-					later over: “Het tegengestelde van inspannen is uitspannen dachten wij als schooljongens, maar
-					uitspannen doe je met paarden.” De contributie werd vastgesteld op 2 cent per week. Een van de
-					huisregels luidde: “De spelers mogen elkaar tijdens de wedstrijd geen kwetsende taal toespreken.”
-					Een jaar na de oprichting ging UNI samen met Sparta, een club van iets oudere jongens die beschikten
-					over ‘echte goalpalen’. Zo ontstond in 2007 de nieuwe club Unie Sparta Combinatie (USC). Omdat het
-					niet boterde tussen de twee geledingen, traden ‘de oude…
+					{{ clubDescription }}
 				</p>
 			</div>
 		</div>

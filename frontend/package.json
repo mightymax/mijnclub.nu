@@ -11,11 +11,12 @@
   },
   "dependencies": {
     "@nuxt/scripts": "^0.9.5",
-    "@nuxtjs/leaflet": "^1.2.4",
-    "@nuxtjs/tailwindcss": "^6.12.2",
-    "leaflet": "^1.9.4",
+    "@nuxt/ui": "^2.19.2",
+    "@yeger/vue-masonry-wall": "^5.0.16",
+    "date-fns": "^4.1.0",
     "nuxt": "^3.14.159",
     "nuxt-mapbox": "^1.6.1",
+    "nuxt-schema-org": "^3.4.1",
     "vue": "latest",
     "vue-router": "latest"
   },
