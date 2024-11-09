@@ -121,7 +121,7 @@
 		showReadMore: true
 	})
 
-	if (route.params.id === '3736') {
+	if (route.params.id === '3736' || route.params.id === 'hfc-haarlem') {
 		clubName.value = 'H.F.C. (Haarlemsche Football Club)';
 		clubDate.value = new Date('1889-01-01');
 		clubDescription.value = 'Haarlemsche Football Club Haarlem was een Nederlandse voetbalclub. De club werd oorspronkelijk opgericht op 1 oktober 1889 en speelde in blauwe shirts, rode broeken en blauwe kousen. Thuiswedstrijden werden in het Haarlemstadion gespeeld. Haarlem stond van oudsher bekend om zijn jeugdopleiding en scouting. Vanaf de eerste jaren van de 20e eeuw was HFC Haarlem succesvol. In 1902 en in 1912 werd de KNVB beker gewonnen. Maar het grootste succes vond plaats in 1946, toen won de club, mede dankzij de legendarische Kick Smit, het landskampioenschap.'
