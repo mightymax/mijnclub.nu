@@ -7,7 +7,7 @@ _:1 a rico:CorporateBody, sdo:SportsOrganization ;
     sdo:name "Ajax" ;
     rico:hasOrHadAgentName [
         a rico:AgentName ;
-        rico:hasOrHadType _:official_name ;
+        rico:hasOrHadCategory <http://vocab.getty.edu/aat/300404670> ;
         rico:textualValue "AFC Ajax" ;
     ] ;
     rico:wasMergedInto _:2 ;
