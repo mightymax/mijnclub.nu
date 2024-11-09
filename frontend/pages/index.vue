@@ -1,20 +1,59 @@
 <script setup lang="ts">
+	import {replaceFullSizeImageWithNewSize} from '~/utils/image.util';
+
 	definePageMeta({
 		layout: 'default'
-	})
+	});
+
+	const imageEndpoint = 'https://sparql.mijnclub.nu';
+	const errorLoadingDate = ref(false);
+	const headerImage1: Ref<string> = ref('');
+	const headerImage2: Ref<string> = ref('');
+	const headerImage1Year: Ref<string> = ref('');
+	const headerImage2Year: Ref<string> = ref('');
+	const headerImageQuery = `
+		PREFIX sdo: <https://schema.org/>
+		SELECT ?source ?iiif_image ?text ?year WHERE {
+		  ?club sdo:subjectOf ?reportage .
+		  ?source a sdo:Photograph ;
+		        sdo:isPartOf ?reportage ;
+		        sdo:image/sdo:contentUrl ?iiif_image .
+		  ?reportage sdo:name ?text ;
+		             sdo:dateCreated ?date .
+		  BIND (YEAR(?date) AS ?year)
+		} order by RAND() limit 2
+	`
+	const {data: headerImages} = await useFetch(imageEndpoint, {
+		method: 'GET',
+		params: {
+			query: headerImageQuery,
+		},
+		headers: {
+			Accept: 'application/sparql-results+json',
+		},
+	});
+
+	// @ts-ignore
+	const sortedHeaderImages = headerImages.value.results.bindings.sort((a, b) => parseInt(b.year.value) - parseInt(a.year.value));
+	// @ts-ignore
+	headerImage1.value = errorLoadingDate.value ? undefined : sortedHeaderImages[0].iiif_image.value;
+	headerImage1Year.value = errorLoadingDate.value ? undefined : sortedHeaderImages[0].year.value;
+	// @ts-ignore
+	headerImage2.value = errorLoadingDate.value ? undefined : sortedHeaderImages[1].iiif_image.value;
+	headerImage2Year.value = errorLoadingDate.value ? undefined : sortedHeaderImages[1].year.value
 
 	const clubs = [
 		{
-			name: 'AMVJ',
-			id: '1'
+			name: 'HFC Haarlem (Haarlemsche Football Club)',
+			id: '3767'
 		},
 		{
-			name: 'DRC',
-			id: '2'
+			name: 'SLTO (Amsterdam)',
+			id: '3700'
 		},
 		{
-			name: 'WV-HEDW',
-			id: '3'
+			name: 'Flinta Football',
+			id: 'flinta-football'
 		}
 	]
 </script>
@@ -51,7 +90,10 @@
 
 	<ClubSelectBlock :clubs="clubs" />
 
-	<ClubHistoryCompare />
+	<ClubHistoryCompare :image-left="replaceFullSizeImageWithNewSize(headerImage1, 1280)"
+	                    :image-right="replaceFullSizeImageWithNewSize(headerImage2, 1280)"
+	                    :image-left-year="headerImage1Year"
+	                    :image-right-year="headerImage2Year" />
 
 	<BaseCenter
 			:background="'rgba(0, 51, 217, 0.05)'"
