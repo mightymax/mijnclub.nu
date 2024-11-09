@@ -68,7 +68,7 @@
 	<HighlightWrapper>
 		<template v-slot:highlights>
 			<HighlightItem
-					url="/club/hfc-haarlem"
+					url="/club/3736"
 					label="HFC Haarlem (Haarlemsche Football Club)"
 					title="De evolutie van het voetbaltenue: Van wollen truien naar high-tech shirts."
 					description="Ga mee op reis door de evolutie van het tenue" />
@@ -80,7 +80,7 @@
 					description="Die goede oude tijd" />
 
 			<HighlightItem
-					url="/club/3"
+					url="/club/flinta-football"
 					label="Flinta Football"
 					title="Juichen om trotse koplopers AMVJ en Sporting Martinus"
 					description="Met een hoop blijdschap je team aanmoedigen" />

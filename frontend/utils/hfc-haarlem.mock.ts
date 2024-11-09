@@ -34,7 +34,7 @@ export const haarlemMockHistory: HistoryItem[] = [
 export const haarlemMockSubmittedContent: SubmittedContent[] = [
 	{
 		url: '#',
-		image: 'https://placehold.co/600x400/F1F4FC/FFF?text=Mijn+Club&font=roboto',
+		image: '/img/toevoeging/EigenMediaHFC1.jpg',
 		label: 'Piet Hermans',
 		submitDate: '23-10-2023',
 		city: 'Amsterdam',
@@ -51,12 +51,7 @@ export const haarlemMockSubmittedContent: SubmittedContent[] = [
 	},
 	{
 		url: '#',
-		image: 'https://placehold.co/600x400/F1F4FC/FFF?text=Mijn+Club&font=roboto',
-		title: 'Voetbalwedstrijd tegen ADO'
-	},
-	{
-		url: '#',
-		image: 'https://placehold.co/600x400/F1F4FC/FFF?text=Mijn+Club&font=roboto',
+		image: '/img/toevoeging/EigenMediaHFC2.jpg',
 		label: 'M. Baretta',
 		submitDate: '14-12-2000',
 		city: 'Haarlem',
