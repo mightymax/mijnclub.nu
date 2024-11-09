@@ -62,28 +62,28 @@
 	<MapsComponent />
 
 	<BaseCenter
-			headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+			headline="Het digitale hart van jouw clubleven."
+			text="Mijnclub.nu is je eigen hoekje op het internet waar je clubliefde kan delen met je clubgenoten." />
 
 	<HighlightWrapper>
 		<template v-slot:highlights>
 			<HighlightItem
 					url="/club/1"
-					label="WV-HEDW"
+					label="HFC Haarlem (Haarlemsche Football Club)"
 					title="De evolutie van het voetbaltenue: Van wollen truien naar high-tech shirts."
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+					description="Ga mee op reis door de evolutie van het tenue" />
 
 			<HighlightItem
 					url="/club/2"
-					label="DRC"
+					label="SLTO (Amsterdam)"
 					title="Voetbal zoals het vroeger was"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+					description="Die goede oude tijd" />
 
 			<HighlightItem
 					url="/club/3"
-					label="AMVJ"
+					label="Flinta Football"
 					title="Juichen om trotse koplopers AMVJ en Sporting Martinus"
-					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." />
+					description="Met een hoop blijdschap je team aanmoedigen" />
 
 		</template>
 	</HighlightWrapper>
@@ -97,8 +97,8 @@
 
 	<BaseCenter
 			:background="'rgba(0, 51, 217, 0.05)'"
-			headline="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-			text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum">
+			headline="Data ligt in jouw handen."
+			text="Help mee door jouw verhaal toe te voegen aan je clubpagina. De club, dat ben jij!">
 		<template v-slot:callToAction>
 			<BaseCallToAction button-text="Voeg zelf je eigen clubhistorie toe" button-link="#" />
 		</template>
