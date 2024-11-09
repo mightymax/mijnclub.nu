@@ -1,0 +1,20 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mijnclub-app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+    environment:
+      - REDIS=redis://redis:6379
+    profiles:
+      - production
+  redis:
+    image: redis
+    container_name: mijnclub-redis
+    volumes:
+      - ./data/redis/data:/data
+    command: ["redis-server"]
